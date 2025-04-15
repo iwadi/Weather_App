@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import CurrentWeather from './components/CurrentWeather/CurrentWeather';
-// import DailyForecast from './components/Days/DailyForecast';
+import DailyForecast from './components/Days/DailyForecast';
 
 // import Forecast from './components/Forecast';
 
@@ -31,7 +31,7 @@ function App() {
           {weatherLoaded && <WeatherForecast city={city} days={1} />}
           {/* <Forecast /> */}
 
-          {/* <DailyForecast /> */}
+          <DailyForecast city={city} />
         </>
       )}
       </div>

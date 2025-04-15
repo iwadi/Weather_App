@@ -1,13 +1,15 @@
-// import '../App.css';
 import WeatherDaily from './WeatherDaily';
-function DailyForecast() {
+
+interface DailyForecastProps {
+    city: string;
+}
+
+function DailyForecast({ city }: DailyForecastProps) {
     return (
-        <>
-            <div className="daily-forecast">
-                <WeatherDaily />
-            </div>
-        </>
-    )
+        <div className="daily-forecast">
+            <WeatherDaily city={city} days={3} />
+        </div>
+    );
 }
 
 export default DailyForecast;
