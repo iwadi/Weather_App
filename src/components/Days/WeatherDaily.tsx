@@ -121,9 +121,9 @@ const WeatherDaily: React.FC<WeatherDailyProps> = ({ city, days }) => {
     if (error) return <div>{error}</div>;
 
     return (
-        <div className="Forecast-Container">
+        <div className="WeatherDaily-Container">
             {forecast.map((day) => (
-                <div className="Day-Card" key={day.date}>
+                <div className="WeatherDaily-Card" key={day.date}>
                     <div className="day">
                         <span className="day-title">{getDayOfWeek(day.date)}</span>
                         <hr className="day-hr" />
